@@ -1,0 +1,191 @@
+/* Resetting some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting the body background and font */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for alignment and padding */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styling with a bold and sleek look */
+header {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #333, #555);
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background: #f9a825;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #c17900;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Main content area */
+main {
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Section styles with background images */
+section {
+    background: #fff;
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Applying unique background images for sections */
+#introduction {
+    background-image: url('https://images.unsplash.com/photo-1509339194530-d98c3f6d0f52'); /* Car engine image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#types {
+    background-color: #e6e6e6;
+}
+
+#engine-parts {
+    background-color: #f9f9f9;
+}
+
+#working-principle {
+    background-color: #f1f1f1;
+}
+
+#conclusion {
+    background-color: #e6e6e6;
+}
+
+/* Adding contrast text for better readability in intro */
+#introduction h2, #introduction p {
+    color: #fff;
+}
+
+/* Section titles with a metallic effect */
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 3px solid #f9a825;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* List of engine parts and types - Adding card design */
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #f9a825;
+    transition: all 0.3s ease;
+}
+
+ul li:hover, ol li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul li strong, ol li strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Footer styling with a deep shadow and bright text */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+}
+
+/* Footer text styling */
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    section {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    ul li, ol li {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
